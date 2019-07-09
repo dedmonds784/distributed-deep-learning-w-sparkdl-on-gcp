@@ -1,5 +1,5 @@
 # distributed-deep-learning-w-sparkdl-on-gcp
-This project uses sparkdl and a gcp cluster inorder to train a model for image classification.
+This project uses sparkdl and a gcp cluster in order to train a model for image classification.
 
 The first file named 'gcp-cluster' holds a shell script to create a 5 node Spark cluster (1 Master, 4 slaves). This command can be either run in your local terminal if gcloud is connected to your gcp account, or can be copy and pasted to the glcoud console in gcp itself.
 
