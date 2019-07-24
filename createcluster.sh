@@ -1,0 +1,3 @@
+gcloud beta dataproc clusters create spark-deeplearning --subnet default --image-version 1.4 --optional-components ANACONDA,JUPYTER --initialization-actions gs://dataproc-initialization-actions/python/conda-install.sh,gs://dataproc-initialization-actions/python/pip-install.sh  --metadata 'CONDA_PACKAGES=keras=2.2.4 tensorflow=1.12.0 h5py=2.7.0' --enable-component-gateway --metadata 'PIP_PACKAGES=msgpack ipyparallel gcsfs pandas==0.24.2 jieba pillow tensorframes kafka tensorflowonspark' --properties spark:spark.jars.packages=databricks:spark-deep-learning:1.5.0-spark2.4-s_2.11 --zone us-central1-a --master-machine-type n1-standard-4 --master-boot-disk-size 500 --worker-machine-type n1-standard-4 --num-workers 4 --worker-boot-disk-size 500 --project deeplearnig-spark
+
+
